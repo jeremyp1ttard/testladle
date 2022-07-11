@@ -1,0 +1,22 @@
+@use '../01-Settings/settings.color' as colors;
+
+@mixin generate-colours {
+    @each $name, $color in colors.$list {
+      .bg-#{$name} {
+        background: $color !important;
+        --background: $color !important;
+  
+        @include darkMode() {
+          background: $color !important;
+          --background: $color !important;
+        }
+      }
+  
+      .text-#{$name} {
+        color: $color !important;
+        @include darkMode() {
+          color: $color !important;
+        }
+      }
+    }
+  }

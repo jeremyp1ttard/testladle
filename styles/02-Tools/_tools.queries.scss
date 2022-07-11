@@ -1,0 +1,18 @@
+@use '../01-Settings/settings.breakpoints' as breakpoints;
+
+@mixin dark-mode() {
+    @media (prefers-color-scheme: dark) {
+      @content;
+    }
+  }
+  
+
+@mixin mq($breakpoint) {
+    @each $breakpoints, $size in breakpoints.$list {
+        @if $breakpoint==$breakpoints {
+            @media screen and (min-width: $size) {
+                @content;
+            }
+        }
+    }
+}

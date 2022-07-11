@@ -1,0 +1,25 @@
+@mixin on-event($self: false) {
+    @if $self {
+      &,
+      &:active,
+      &:focus {
+        @content;
+      }
+    } @else {
+      &:active,
+      &:focus {
+        @content;
+      }
+    }
+  }
+  
+
+  
+
+  
+
+  
+
+  
+ 
+  

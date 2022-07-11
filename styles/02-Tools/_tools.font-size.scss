@@ -1,0 +1,9 @@
+@use '../01-Settings/index' as settings;
+
+@mixin generate-font-sizes {
+    @each $name, $size in settings.$font-sizes {
+      .font-#{$name} {
+        font-size: $size;
+      }
+    }
+}

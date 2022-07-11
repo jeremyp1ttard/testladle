@@ -1,0 +1,10 @@
+//Global settings for the project
+
+//This layer holds any global settings for your project. 
+// We should include settings which can be accessed from 
+// anywhere in this layer. For examples, font size, 
+// color palettes and configuration available for the entire 
+// project should be included in this layer.
+
+@forward './settings.color';
+@forward './settings.spacing';
