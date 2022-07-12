@@ -1,0 +1,14 @@
+@mixin generate-display-classes() {
+    $list: (
+        'block',
+        'flex',
+        'inline',
+        'inline-block'
+    );
+  
+    @each $value in $list {
+      .#{$value} {
+        display: #{$value};
+      }
+    }
+  }

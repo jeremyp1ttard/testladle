@@ -1,0 +1,25 @@
+@use '../02-Tools/tools.spacing' as spacing;
+
+
+//padding
+@include spacing.generate(p, padding);
+@include spacing.generate(pl, padding-left);
+@include spacing.generate(pr, padding-right);
+@include spacing.generate(pb, padding-bottom);
+@include spacing.generate(pt, padding-top);
+@include spacing.generate(px, padding-left, padding-right);
+@include spacing.generate(py, padding-top, padding-bottom);
+
+//margin
+@include spacing.generate(m, margin);
+@include spacing.generate(ml, margin-left);
+@include spacing.generate(mr, margin-right);
+@include spacing.generate(mb, margin-bottom);
+@include spacing.generate(mt, margin-top);
+@include spacing.generate(mx, margin-left, margin-right);
+@include spacing.generate(my, margin-top, margin-bottom);
+@include spacing.auto-margin();
+
+.centered {
+    margin: 0 auto;
+}

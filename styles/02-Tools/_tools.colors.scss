@@ -1,20 +1,23 @@
 @use '../01-Settings/settings.color' as colors;
+@use '../02-Tools/tools.queries' as query;
 
 @mixin generate-colours {
     @each $name, $color in colors.$list {
       .bg-#{$name} {
         background: $color !important;
+        //used for fromeworks like ionic that need you to override css vars
         --background: $color !important;
   
-        @include darkMode() {
+        @include query.dark-mode() {
           background: $color !important;
+          //used for fromeworks like ionic that need you to override css vars
           --background: $color !important;
         }
       }
   
       .text-#{$name} {
         color: $color !important;
-        @include darkMode() {
+        @include query.dark-mode() {
           color: $color !important;
         }
       }
