@@ -1,0 +1,7 @@
+.ladle-addons {
+
+    li:where(:nth-child(3), :nth-child(5), :nth-child(8)) {
+
+        display: none;
+    }
+}
