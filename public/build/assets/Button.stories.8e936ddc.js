@@ -1,0 +1,1 @@
+import{j as e}from"./index.aed7d99e.js";const o=({text:t})=>e("button",{type:"button",class:"px-5 py-2",children:t}),n=({label:t,disabled:d})=>e(o,{text:t});n.args={label:"Hello world",disabled:!1};typeof window!="undefined"&&window.document&&window.document.createElement&&document.documentElement.setAttribute("data-storyloaded","");export{n as Primary};
